@@ -10,6 +10,9 @@ require File.join(File.expand_path(File.dirname(__FILE__)), "..", "common_config
 CONFIG_FILES = %w(
   /opt/nginx/conf/nginx.conf
   /opt/nginx/conf/sites-available/default
+  /apps/bankofbs/README
+  /apps/ctrain/README
+  /apps/sassywood/README
 )
 
 module Configuration
