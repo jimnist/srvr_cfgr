@@ -4,12 +4,13 @@
 require File.join(File.expand_path(File.dirname(__FILE__)), "..", "common_configuration")
 
 #  /opt/nginx/conf/sites-available/ctrain
-#  /opt/nginx/conf/sites-available/sassywood
+
 #  /opt/nginx/conf/sites-available/bankofbs
 
 CONFIG_FILES = %w(
   /opt/nginx/conf/nginx.conf
   /opt/nginx/conf/sites-available/default
+  /opt/nginx/conf/sites-available/sassywood
   /apps/bankofbs/README
   /apps/ctrain/README
   /apps/sassywood/README
