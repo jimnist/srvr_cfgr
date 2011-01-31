@@ -22,6 +22,11 @@ module Configuration
     CONFIG_FILES.each do |cfg|
       if cfg.include?('sites-available')
         link = cfg.gsub('sites-available', 'sites-enabled')
+
+        # make sure the sites-enabled directory exists
+        enabled_dir = File.dirname(link)
+        FileUtils.mkdir_p(enabled_dir) unless File.exists?(enabled_dir) && File.directory?(enabled_dir)
+
         FileUtils.ln_sf  cfg, link unless File.exists?(link)
       end
     end
