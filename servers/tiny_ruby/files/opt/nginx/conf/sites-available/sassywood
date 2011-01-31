@@ -1,6 +1,6 @@
 server {
     listen       80;
-    server_name  reggie.loco8.org staging.sassywood.org www.sassywood.org sassywood.org;
+    server_name  staging.sassywood.org www.sassywood.org sassywood.org;
 
     access_log  logs/sassywood.access.log  main;
 
