@@ -4,13 +4,11 @@
 
 SERVER_TYPE = ENV['SRVR_TYP']
 
-raise "SRVR_TYP environment variable is not defined" 
-  unless !SERVER_TYPE.nil?
+raise "SRVR_TYP environment variable is not defined"  unless !SERVER_TYPE.nil?
 
 REPO_FILES_ROOT = File.join(Dir.pwd, 'servers', SERVER_TYPE, 'files')
 
-raise "SRVR_TYP is set but does not correspond to a propperly set up directory under 'servers'" 
-  unless File.directory? REPO_FILES_ROOT
+raise "SRVR_TYP is set but does not correspond to a propperly set up directory under 'servers'" unless File.directory? REPO_FILES_ROOT
 
 require "./servers/#{SERVER_TYPE}/configuration.rb"
 include Configuration
