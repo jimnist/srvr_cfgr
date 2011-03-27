@@ -10,7 +10,6 @@ require File.join(File.expand_path(File.dirname(__FILE__)), "..", "common_config
 CONFIG_FILES = %w(
   /opt/nginx/conf/nginx.conf
   /opt/nginx/conf/sites-available/sassywood
-  /var/sites/sassywood/SERVER_CONFIG_README  
 )
 
 module Configuration

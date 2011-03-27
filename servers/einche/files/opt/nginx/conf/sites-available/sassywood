@@ -1,0 +1,11 @@
+    # this site is a static html site deployed via rsync
+    server {
+        server_name www.sassywood.org;
+        rewrite ^ $scheme://sassywood.org$request_uri permanent;
+    }
+    server {
+        listen 80;
+        server_name  sassywood.org;
+        access_log  logs/sassywood.access.log  main;
+        root /var/sites/sassywood;
+    }
