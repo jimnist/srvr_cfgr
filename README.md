@@ -7,7 +7,7 @@ each 'type' of server has a directory under servers directory.any file that is c
 usage:
 - files are edited and tested on the server
 
-- clone the repo on a server as root
+- clone the repo on a server as root, with all that is implied - creating a rsa key-pair and adding it as a deploy key to your repo.
 
 	    cd ~
 	    git clone git@github.com:gn0m30/server_configs.git
