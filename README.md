@@ -36,5 +36,5 @@ current server types:
     
 * __tiny_ruby__ - (first server, not used anymore)
 
- * __other__
-   just for testing, not really a server
+* __template__
+   just a server template
