@@ -1,5 +1,7 @@
+server_configs
+----
 this project is for saving off server configuration information and
-is primarily used to keep staging and production servers in synch. 
+is primarily used to keep different (staging and production?) servers in synch. 
 
 each 'type' of server has a directory under servers directory.  
 any file that is configured specifically for that type of server is 
@@ -9,6 +11,7 @@ usage:
 - files are edited and tested on the server
 
 - clone the repo on a server as root
+
 	cd ~
 	git clone git@github.com:gn0m30/server_configs.git
 	
@@ -19,20 +22,24 @@ usage:
   appropriate server type directory. the files listed in that file will be 
   copied into the appropriate directory under the server type directory by 
   running:
+  
 	rake reap
-	
+
 - to synchronize a new repo, make sure sites are enabled, and restart appropriate
   services, run:
 	rake sow
 
 current server types:
 
-	tiny_ruby
-	AWS server for ruby and sinatra apps using ree, passenger, and ngnix
-		hosts the following sites:
-			ctrain
-			sassywood
-			bankofbs
+* __tiny_ruby__
+  (first server, not used anymore)
+  
+* __einche__
+  AWS server for ruby, rails3, and sinatra apps with ruby 1.9, rails3, passenger, sqlite, and ngnix
+	hosts the following sites:
+		sassywood
+		bankofbs
+		idontknowmucho.com
 
-    other
-    just for testing, not really a server
+ * __other__
+   just for testing, not really a server
