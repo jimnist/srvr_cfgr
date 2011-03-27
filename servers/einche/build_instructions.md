@@ -146,6 +146,12 @@ dpkg-reconfigure tzdata
 SERVER_CONFIG_SERVER_TYPE=einche
 ```
 
+since we will be using [srvr_cfgr](https://github.com/gn0m30/srvr_cfgr) to manage server configuration, set up github credentials
+```sh
+git config --global user.name "<your github username>"
+git config --global user.email "<your email>"
+```
+
 save the AMI so we don't have to do all that again
 -------------------
 first reboot the instance - BE VERY CAREFUL NOT TO TERMINATE IT - and make sure it's all working, that nginx comes up automatically. 
