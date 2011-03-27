@@ -2,7 +2,7 @@
 # tasks for keeping server configs in synch
 #
 
-SERVER_CONFIG_SERVER_TYPE =  ENV['SERVER_CONFIG_SERVER_TYPE']
+SERVER_TYPE = ENV['SERVER_CONFIG_SERVER_TYPE']
 
 REPO_FILES_ROOT = File.join(Dir.pwd, 'servers', SERVER_TYPE, 'files')
 
