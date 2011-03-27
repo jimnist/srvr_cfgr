@@ -12,8 +12,8 @@ usage:
 
 - clone the repo on a server as root
 
-	cd ~
-	git clone git@github.com:gn0m30/server_configs.git
+	    cd ~
+	    git clone git@github.com:gn0m30/server_configs.git
 	
 - set a GN0M30_SERVER_TYPE environment variable on the server the 
   matches a server type directory.
@@ -23,7 +23,7 @@ usage:
   copied into the appropriate directory under the server type directory by 
   running:
   
-	rake reap
+	    rake reap
 
 - to synchronize a new repo, make sure sites are enabled, and restart appropriate
   services, run:
@@ -35,11 +35,11 @@ current server types:
   (first server, not used anymore)
   
 * __einche__
-  AWS server for ruby, rails3, and sinatra apps with ruby 1.9, rails3, passenger, sqlite, and ngnix
-	hosts the following sites:
-		sassywood
-		bankofbs
-		idontknowmucho.com
+  AWS server for ruby, rails3, and sinatra apps with ruby 1.9, rails3, passenger, sqlite, and ngnix 
+  hosts the following sites:
+    sassywood
+    bankofbs
+    idontknowmucho
 
  * __other__
    just for testing, not really a server
