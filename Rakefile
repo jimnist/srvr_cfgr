@@ -2,8 +2,7 @@
 # tasks for keeping server configs in synch
 #
 
-GN0M30_SERVER_TYPE =  ENV['GN0M30_SERVER_TYPE']
-SERVER_TYPE = GN0M30_SERVER_TYPE.nil? ? 'tiny_ruby' : GN0M30_SERVER_TYPE
+SERVER_CONFIG_SERVER_TYPE =  ENV['SERVER_CONFIG_SERVER_TYPE']
 
 REPO_FILES_ROOT = File.join(Dir.pwd, 'servers', SERVER_TYPE, 'files')
 
