@@ -138,7 +138,7 @@ set the timezone (as root)
     dpkg-reconfigure tzdata
 
 
-- set a persistent __SRVR_TYP__ environment variable on the  in __/etc/environment__.
+set a persistent __SRVR_TYP__ environment variable on the  in __/etc/environment__.
 
     SRVR_TYP=einche
 
