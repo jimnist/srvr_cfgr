@@ -1,0 +1,11 @@
+# this site is a static html site deployed via rsync
+server {
+    server_name www.bankofbs.com;
+    rewrite ^ $scheme://bankofbs.com$request_uri permanent;
+}
+server {
+    listen 80;
+    server_name  bankofbs.org;
+    access_log  logs/bankofbs.access.log  main;
+    root /var/sites/bankofbs;
+}

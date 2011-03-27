@@ -1,6 +1,8 @@
-server_configs
+srvr_cfgr
 ----
-this project is for saving off server configuration information and is primarily used to keep different (staging and production?) servers in synch. 
+this project provides a SUPER SIMPLE method for managing server configuration files. useful for keeping servers in synch and storing server configuration information and documentation.
+
+ information and is primarily used to keep different (staging and production?) servers in synch. 
 
 each 'type' of server has a directory under servers directory.any file that is configured specifically for that type of server is listed under that directory. 
 
@@ -12,7 +14,7 @@ usage:
 	    cd ~
 	    git clone git@github.com:gn0m30/server_configs.git
 	
-- set a __SERVER_CONFIG_SERVER_TYPE__ environment variable on the server the matches a server type directory.
+- set a persistent __SERVER_CONFIG_SERVER_TYPE__ environment variable on the server the matches a server type directory.
 
 - edit and test files on the server, adding them to the files.yml under the appropriate server type directory. the files listed in that file will be copied into the appropriate directory under the server type directory by running:
   

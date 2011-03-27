@@ -22,9 +22,9 @@ task :sow do
   sow
 end
 
-desc "update config files and reset services"
+desc "reset services"
 task :reload do
-  puts "sowing #{SERVER_TYPE}"
+  puts "reloading #{SERVER_TYPE}"
   reload
 end
 
